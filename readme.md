@@ -6,7 +6,7 @@ Create localized template strings for easy multilingual development.
 
 ---
 
-Version: 1.0.1
+Version: 1.0.2
 
 Author: Matze https://modularity.group
 
@@ -25,6 +25,10 @@ Adds ability to add translated (localized) strings in admin dashboard.
 ---
 
 **Changelog**
+
+1.0.2
+- fix PHP-notice when string has no localizations 
+
 1.0.1
 - improve fallback output
 
