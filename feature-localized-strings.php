@@ -24,7 +24,7 @@ function __ls($string,$locale = NULL){
   if(!$localized_strings) {
     $localized_strings = json_decode(get_option('localized-strings'),true);
   }
-  if($localized_strings[$string] && $localized_strings[$string][$locale]){
+  if(array_key_exists($string,$localized_strings) && array_key_exists($locale,$localized_strings[$string])){
     return $localized_strings[$string][$locale];
   } else {
     return $string;
